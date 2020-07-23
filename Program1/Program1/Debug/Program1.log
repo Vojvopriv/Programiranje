@@ -1,3 +1,0 @@
-﻿  Program1.cpp
-C:\Users\User\Desktop\Projects-priv\Programiranje\Program1\Program1\Program1.cpp(18,20): warning C4305: 'initializing': truncation from 'double' to 'float'
-  Program1.vcxproj -> C:\Users\User\Desktop\Projects-priv\Programiranje\Program1\Debug\Program1.exe
