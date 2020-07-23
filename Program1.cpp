@@ -4,11 +4,11 @@
 
 using namespace std;
 
-int main(int argc, char *argv [])
+int main(int argc, char* argv[])
 {
     int number_of_arguments = argc;
-    char *First_arg = argv[0];       /* This is the program name. */
-    char *Second_arg = argv[1];      // Prvi argument koji si mu poslao prilikom pokretanja programa
+    char* First_arg = argv[0];       /* This is the program name. */
+    char* Second_arg = argv[1];      // Prvi argument koji si mu poslao prilikom pokretanja programa
                                      // Za pokretanje iz powershell-a  | >Program1.exe Argument1 Argument2
 
     printf("%s \n", First_arg);      /*Will print out the program path*/
@@ -23,7 +23,7 @@ int main(int argc, char *argv [])
     bool as = true;      // With #include<stdbool.h>
     bool es = false;
 
-    enum Color { red, green, blue };
+    enum Color { red, green, blue = 12, srpska_boja };   // Kada bi printali vrijednosti red,green,blue,srpska_boja, bilo bi 0,1,12,13
     enum Color Boja_auspuha = red;
 
     scanf_s("%d", &a);
