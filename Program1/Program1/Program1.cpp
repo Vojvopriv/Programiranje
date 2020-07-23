@@ -2,6 +2,7 @@
 //
 #include<stdio.h>
 #include <iostream>
+#include<stdbool.h>
 
 using namespace std;
 
@@ -9,12 +10,25 @@ int main()
 {
     int a, b, c;
 
+    char My_character = 'b';
+    string My_string = "Hello bitches";
+
+    bool as = true;      // With #include<stdbool.h>
+    bool es = false;
+
+    enum Color { red, green, blue };
+    enum Color Boja_auspuha = red;
+
+    cout << My_string[1];
+
     scanf_s("%d", &a);
     printf("\n%d\n", a);
 
     cin >> b;
     cout << "\n" << b << "\n";
     cout << "Hello World!\n";
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
