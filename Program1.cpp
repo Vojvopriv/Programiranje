@@ -1,11 +1,28 @@
 #include<stdio.h>
 #include <iostream>
 #include<stdbool.h>
+#include<stdint.h>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
+    
+    int8_t x = 192;  // #include<stdint.h>   Jedan bajt tj.1100 0000
+    short int c;    //  Dva bajta tj. 0000 0000 0000 0000
+    int a = 16;    // Cetiri bajta tj.0000 0000 0000 0000 0000 0000 0001 0000
+    int b = 43;   // 0010 1011
+
+    printf(" %d \n", a & b);  // 0000 0000          --- 0
+    printf(" %d \n", a | b);  // 0011 1011          --- 59
+    printf(" %d \n", a ^ b);  // 0011 1011          --- 59
+    printf(" %d \n", a << 9); // 10 0000 0000 0000  --- 8192
+    printf(" %d \n", a >> 2); // 0100               --- 4
+    printf(" %d \n", ~x);     // 0011 1111          --- 63
+
+
+
+
     int number_of_arguments = argc;
     char* First_arg = argv[0];       /* This is the program name. */
     char* Second_arg = argv[1];      // Prvi argument koji si mu poslao prilikom pokretanja programa
@@ -15,7 +32,7 @@ int main(int argc, char* argv[])
     printf("%s \n", Second_arg);
 
     int a, b;
-    float c = 3.126;                      printf(" %.2f ", c); // ZAOKRUZUJE dvije decimale - ispisuje 3.13
+    float c = 3.126;   printf(" %.2f ", c); // ZAOKRUZUJE dvije decimale - ispisuje 3.13
 
     char My_character = 'b';
     string My_string = "Hello bitches";   cout << My_string[1];
@@ -32,7 +49,5 @@ int main(int argc, char* argv[])
     cin >> b;
     cout << "\n" << b << "\n";
     cout << "Hello World!\n";
-
-
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
