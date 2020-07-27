@@ -7,6 +7,20 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
+    // -----------------------------------------------------------------------------------------------------------------
+    int number_of_arguments = argc;
+    char* First_arg = argv[0];       /* This is the program name. */
+    char* Second_arg = argv[1];      // Prvi argument koji si mu poslao prilikom pokretanja programa
+                                     // Za pokretanje iz powershell-a  | >Program1.exe Argument1 Argument2
+
+    printf("%s \n", First_arg);      /*Will print out the program path*/
+    printf("%s \n", Second_arg);
+    // -----------------------------------------------------------------------------------------------------------------
+
+    float vr1 = 14.5, vr2 = 2;
+    float y = (int)vr1 / vr2;     printf("\n ---- %f ---- \n", y);
+   
+    // -----------------------------------------------------------------------------------------------------------------
     
     int8_t x = 192;  // #include<stdint.h>   Jedan bajt tj.1100 0000
     short int c;    //  Dva bajta tj. 0000 0000 0000 0000
@@ -19,19 +33,9 @@ int main(int argc, char* argv[])
     printf(" %d \n", a << 9); // 10 0000 0000 0000  --- 8192
     printf(" %d \n", a >> 2); // 0100               --- 4
     printf(" %d \n", ~x);     // 0011 1111          --- 63
+    // -----------------------------------------------------------------------------------------------------------------
 
 
-
-
-    int number_of_arguments = argc;
-    char* First_arg = argv[0];       /* This is the program name. */
-    char* Second_arg = argv[1];      // Prvi argument koji si mu poslao prilikom pokretanja programa
-                                     // Za pokretanje iz powershell-a  | >Program1.exe Argument1 Argument2
-
-    printf("%s \n", First_arg);      /*Will print out the program path*/
-    printf("%s \n", Second_arg);
-
-    int a, b;
     float c = 3.126;   printf(" %.2f ", c); // ZAOKRUZUJE dvije decimale - ispisuje 3.13
 
     char My_character = 'b';
@@ -42,6 +46,7 @@ int main(int argc, char* argv[])
 
     enum Color { red, green, blue = 12, srpska_boja };   // Kada bi printali vrijednosti red,green,blue,srpska_boja, bilo bi 0,1,12,13
     enum Color Boja_auspuha = red;
+    // -----------------------------------------------------------------------------------------------------------------
 
     scanf_s("%d", &a);
     printf("\n %d \n", a);
@@ -49,5 +54,6 @@ int main(int argc, char* argv[])
     cin >> b;
     cout << "\n" << b << "\n";
     cout << "Hello World!\n";
+    // ------------------------------------------------------------------------------------------------------------------
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
