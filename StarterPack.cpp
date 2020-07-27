@@ -3,6 +3,9 @@
 #include<stdbool.h>
 #include<stdint.h>
 
+#define KOSOVO "Srbija"
+#define ES 4
+
 using namespace std;
 
 int main(int argc, char* argv[])
