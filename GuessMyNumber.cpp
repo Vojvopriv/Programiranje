@@ -16,7 +16,7 @@ int main()
     printf("The number is between 0 and 20\n\n");
     for (n; n > 0; --n)
     {
-        if (n < 2) tri = "y";
+        if (n == 1) tri = "y";
 
         printf("You have %d tr%s left to guess my number!\n", n, tri);
         cout << "Enter your guess:";

@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <iostream>
+#include <iostream>                                         //Pomijesan c i c++ input/output
 #include <stdlib.h>
 
-void DrawGame(char broj[], int size);               // Brise ekran pa crta poligon sa brojevima i iksovima
-int GameOver (char broj[], int size, int i);         // Provjerava da li je igra gotova i ispisuje pobjednika
-int MakeMove (char broj[], int size, int i, char c);                        // Trazi unos tj. potez igraca
+void DrawGame(char broj[], int size);                     // Brise ekran pa crta poligon sa brojevima i iksovima
+int GameOver (char broj[], int size, int i);             // Provjerava da li je igra gotova i ispisuje pobjednika
+int MakeMove (char broj[], int size, int i, char c);    // Trazi unos tj. potez igraca
 void AddSign (char* broj,  int size, char c, int p);   // Postavlja znak (x / o) u niz
 
 using namespace std;

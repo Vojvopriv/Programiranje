@@ -65,4 +65,3 @@ int main(int argc, char* argv[])
     cout << "Hello World!\n"<< string(3, '\n');  // Tri nove linije
     // ------------------------------------------------------------------------------------------------------------------
 }
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
