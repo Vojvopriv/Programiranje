@@ -25,11 +25,8 @@ int main()
 		spas[i] = ' ';
 
 	unesi_rijec();
-	while (pozovi(i))
-	{
-
-		i++;
-	}
+	while (pozovi(i++));
+	
 	cout << "\n\tCestitam" << string(6, '\n');
 
 	return 0;
@@ -45,19 +42,19 @@ void play_the_sound(int br_pokusaja)
 {
 	switch (br_pokusaja)   // Razliciti zvucni efekti na razlicite pokusaje
 	{
-	case 1:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\slapwav", NULL, SND_FILENAME);
+	case 1:  PlaySound(L"Sounds\\slapwav", NULL, SND_FILENAME);
 		break;
-	case 2:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\AAAGH1", NULL, SND_FILENAME);
+	case 2:  PlaySound(L"Sounds\\AAAGH1", NULL, SND_FILENAME);
 		break;
-	case 3:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\punch1", NULL, SND_FILENAME);
+	case 3:  PlaySound(L"Sounds\\punch1", NULL, SND_FILENAME);
 		break;
-	case 4:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\punch2", NULL, SND_FILENAME);
+	case 4:  PlaySound(L"Sounds\\punch2", NULL, SND_FILENAME);
 		break;
-	case 5:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\SCREAM_4", NULL, SND_FILENAME);
+	case 5:  PlaySound(L"Sounds\\SCREAM_4", NULL, SND_FILENAME);
 		break;
-	case 6:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\SCREAM3", NULL, SND_FILENAME);
+	case 6:  PlaySound(L"Sounds\\SCREAM3", NULL, SND_FILENAME);
 		break;
-	case 7:  PlaySound(L"C:\\Users\\User\\Desktop\\Vjesalo\\Sounds\\death", NULL, SND_FILENAME);
+	case 7:  PlaySound(L"Sounds\\death", NULL, SND_FILENAME);
 		break;
 	}
 }

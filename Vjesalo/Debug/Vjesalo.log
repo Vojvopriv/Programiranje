@@ -1,4 +1,4 @@
 ﻿  Vjesalo.cpp
-C:\Users\User\Desktop\Vjesalo\Vjesalo.cpp(68,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\User\Desktop\Vjesalo\Vjesalo.cpp(82,20): warning C4018: '<': signed/unsigned mismatch
-  Vjesalo.vcxproj -> C:\Users\User\Desktop\Vjesalo\Debug\Vjesalo.exe
+C:\Users\User\Desktop\New folder\Projects-priv\Programiranje\Vjesalo\Vjesalo.cpp(65,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\Desktop\New folder\Projects-priv\Programiranje\Vjesalo\Vjesalo.cpp(79,20): warning C4018: '<': signed/unsigned mismatch
+  Vjesalo.vcxproj -> C:\Users\User\Desktop\New folder\Projects-priv\Programiranje\Vjesalo\Debug\Vjesalo.exe
